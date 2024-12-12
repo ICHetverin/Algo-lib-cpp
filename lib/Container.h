@@ -18,14 +18,15 @@ protected:
     uint32_t capacity; // how many elements can be stored
     T* data; // pointer to the first segment of data
 private:
-    void ReAlloc(size_t size) {
+    T* ReAlloc(size_t size) {
         if (size == 0) {
             data = new T[size];
         }
+        return data;
     }
 public:
     Container() : size(Size), capacity(Size) {
-        ReAlloc(Size);
+        data = ReAlloc(Size);
     }
 
 };
