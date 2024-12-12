@@ -3,6 +3,10 @@ This is a personal academic project. Dear PVS-Studio, please check it.
 PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 */
 
+/*
+TODO fix initialization in Container
+*/
+
 #pragma once
 #include <stdint.h>
 #include <iostream>
@@ -20,7 +24,7 @@ private:
         }
     }
 public:
-    Container() : size(Size) {
+    Container() : size(Size), capacity(Size) {
         ReAlloc(Size);
     }
 
