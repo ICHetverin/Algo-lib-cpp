@@ -1,2 +1,8 @@
 # CMake files
 **/build/**
+
+# Special MacOS files
+**/.DS_Store
+
+# PVS files
+**/.PVS-Studio/**
