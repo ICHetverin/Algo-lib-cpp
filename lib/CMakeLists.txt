@@ -1,6 +1,8 @@
 add_library(
     lib
-
-    test.h
     test.cpp
+
+    Array.h
+
+    Container.h
 )
