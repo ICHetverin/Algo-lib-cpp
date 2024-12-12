@@ -40,4 +40,5 @@ jobs:
       - name: Upload SARIF to GitHub
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: ${{ steps.run-analysis.outputs.sarif }}
+          sarif_file: pvs-report.sarif
+          category: PVS-Studio
